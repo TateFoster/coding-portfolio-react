@@ -19,18 +19,21 @@ export default function NavBar() {
 				<FaHamburger />
 			</a>
 			<div className="links" id="links">
-				<div className="box">
-					<a href="/">About Me</a>
-				</div>
-				<div className="box">
-					<a href="/projects">Projects</a>
-				</div>
-				<div className="box">
-					<a href="/contact">Contact Me</a>
-				</div>
-				<div className="box">
-					<a href="/resume">Resume</a>
-				</div>
+				<a className="box" href="/">
+					About Me
+				</a>
+
+				<a className="box" href="/projects">
+					Projects
+				</a>
+
+				<a className="box" href="/contact">
+					Contact Me
+				</a>
+
+				<a className="box" href="/resume">
+					Resume
+				</a>
 			</div>
 		</div>
 	);
