@@ -4,10 +4,10 @@ import { FaHamburger } from "react-icons/fa";
 const showLinks = (e) => {
 	e.preventDefault();
 	const link = document.getElementById("links");
-	if (link.style.display === "block") {
+	if (link.style.display === "flex") {
 		link.style.display = "none";
 	} else {
-		link.style.display = "block";
+		link.style.display = "flex";
 	}
 };
 
