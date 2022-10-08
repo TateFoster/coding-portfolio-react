@@ -15,23 +15,23 @@ export default function NavBar() {
 	return (
 		<div className="containerNav">
 			<h1>Tate Foster</h1>
-			<a href="" className="icon" onClick={showLinks}>
+			<a href="" className="iconNav" onClick={showLinks}>
 				<FaHamburger />
 			</a>
 			<div className="links" id="links">
-				<a className="box" href="/">
+				<a className="btnNav" href="/">
 					About Me
 				</a>
 
-				<a className="box" href="/projects">
+				<a className="btnNav" href="/projects">
 					Projects
 				</a>
 
-				<a className="box" href="/contact">
+				<a className="btnNav" href="/contact">
 					Contact Me
 				</a>
 
-				<a className="box" href="/resume">
+				<a className="btnNav" href="/resume">
 					Resume
 				</a>
 			</div>

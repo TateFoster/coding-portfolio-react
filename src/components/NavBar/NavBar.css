@@ -6,7 +6,7 @@ h1 {
     color: darkgreen;
 }
 
-.box{
+.btnNav{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,14 +24,14 @@ h1 {
 }
 
 
-.box:hover {
+.btnNav:hover {
     background-color: darkslategray;
     color: #45dd45;
     border: 5px solid #4545d6
 }
 
 
-.icon {
+.iconNav {
     align-self: center;
     text-decoration: none;
     color: blue
@@ -45,7 +45,7 @@ h1 {
     text-align: center;
 }
 
-.links {
+.linksNav {
 
     margin: 0 15px;
     width:100%;
@@ -53,7 +53,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-direction: column; */
 }
 
 @media screen and (min-width: 769px){
@@ -62,7 +61,7 @@ h1 {
         justify-content: space-evenly;
         font-size: 1.5rem;
     }
-    .box {
+    .btnNav {
         width: 100px;
         height: 50px;
         margin: 0px 15px;
