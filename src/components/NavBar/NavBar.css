@@ -1,0 +1,57 @@
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid blue;
+    border-radius: 70%;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.box a {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.icon {
+    text-decoration: none;
+    color: blue
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: none;
+}
+
+@media screen and (min-width: 769px){
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+    }
+    .links {
+        margin: 2%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icon {
+        display: none;
+    }
+}

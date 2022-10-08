@@ -1,38 +1,22 @@
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import "./App.css";
-import NavBar from "./components/NavBar";
-
-
-export default function NavBar() {
-	let [page, setPage] = useState("about");
-
-	const pageChoice = (e) => {
-		setPage(e.target.id);
-	};
-
-
-
-
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
 	return (
-		<div className="App">
-			<NavBar />
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<Router>
+			<div className="">
+				<NavBar />
+				<Routes>
+					{/* <Route path="/" element={<AboutMe />} /> */}
+					{/* <Route path="/contact" element={<Contact />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/resume" element={<Resume />} /> */}
+				</Routes>
+				{/* <Footer /> */}
+			</div>
+		</Router>
 	);
 }
 
