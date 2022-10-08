@@ -13,7 +13,7 @@ const showLinks = (e) => {
 
 export default function NavBar() {
 	return (
-		<div className="container">
+		<div className="containerNav">
 			<h1>Tate Foster</h1>
 			<a href="" className="icon" onClick={showLinks}>
 				<FaHamburger />
