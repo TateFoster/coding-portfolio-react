@@ -25,8 +25,8 @@ h1 {
 
 .box:hover {
     background-color: darkslategray;
-    box-shadow: -2px green;
-    color: rgb(69, 221, 69)
+    color: #45dd45;
+    border: 5px solid #4545d6
 }
 
 
