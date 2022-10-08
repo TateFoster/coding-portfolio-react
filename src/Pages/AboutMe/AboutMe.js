@@ -10,10 +10,12 @@ import {
 	DiHtml5,
 } from "react-icons/di";
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
+import pig from "./programming-pig.jpg";
 
 export default function AboutMe() {
 	return (
 		<div className="container">
+			<img className="profile" src={pig} alt="Guinea Pig at keyboard"></img>
 			<p>Hi there!</p>
 			<p>
 				I'm a full stack web developer with a passion for creating fun and easy

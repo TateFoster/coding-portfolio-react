@@ -23,3 +23,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.profile{
+    border-radius: 100%;
+}
