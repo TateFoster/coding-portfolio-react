@@ -1,0 +1,23 @@
+.containerFooter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    flex-wrap: wrap;
+}
+
+.containerFooter h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.iconFooter {
+    color: rgb(113, 199, 113);
+    height: 50px;
+    width: 50px;
+    margin:20px
+}
+
+.linkFooter {
+    text-decoration: none;
+}

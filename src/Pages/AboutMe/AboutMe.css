@@ -1,4 +1,4 @@
-.container {
+.containerAbout {
     color: white;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,7 @@
 .icons {
     height: 50px;
     width: 50px;
+    color: #3483df;
 }
 
 .allIcons {

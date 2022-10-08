@@ -3,7 +3,7 @@ import { FaHamburger } from "react-icons/fa";
 
 const showLinks = (e) => {
 	e.preventDefault();
-	const link = document.getElementById("links");
+	const link = document.getElementById("linksNav");
 	if (link.style.display === "flex") {
 		link.style.display = "none";
 	} else {
@@ -18,7 +18,7 @@ export default function NavBar() {
 			<a href="" className="iconNav" onClick={showLinks}>
 				<FaHamburger />
 			</a>
-			<div className="links" id="links">
+			<div className="linksNav" id="linksNav">
 				<a className="btnNav" href="/">
 					About Me
 				</a>
