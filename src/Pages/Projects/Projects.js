@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Projects.css";
 import fairFare from "./fair-fare.png";
 import pourLoser from "./pour-loser.png";
@@ -42,5 +43,36 @@ export default function Projects() {
 		}
 	};
 
-	return <div className="projectsContainer"></div>;
+	return (
+		<div className="projectsContainer">
+			<div className="cardProject">
+				<h2>{projects[index].name}</h2>
+				<img className="projectImage" src={projects[index].image}></img>
+				<a
+					className="projectLink"
+					href={projects[index].repository}
+					target="_blank"
+				>
+					Code
+				</a>
+				{projects[index].liveSite ? (
+					<a
+						className="projectLink"
+						href={projects[index].liveSite}
+						target="_blank"
+					>
+						Application
+					</a>
+				) : (
+					<></>
+				)}
+			</div>
+			<div className="btnProjects" onClick={subtractFromIndex}>
+				Prev
+			</div>
+			<div className="btnProjects" onClick={addToIndex}>
+				Next
+			</div>
+		</div>
+	);
 }
