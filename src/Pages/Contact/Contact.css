@@ -5,6 +5,7 @@
 }
 
 .emailBox {
+    border-radius: 10%;
     background-color: darkblue;
     display: flex;
     flex-direction: column;
