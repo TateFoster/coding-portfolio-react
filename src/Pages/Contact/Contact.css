@@ -1,3 +1,17 @@
 .containerContact {
+    display: flex;
+    justify-content: center;
     color: white;
+}
+
+.emailBox {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.selfInfo {
+    align-self: center;
+    justify-self: center;
 }
