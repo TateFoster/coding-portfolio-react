@@ -59,44 +59,48 @@ export default function Projects() {
 			<div id="cardProject" className="cardProject">
 				<h2>{projects[index].name}</h2>
 				<img className="projectImage" src={projects[index].image}></img>
-				<a
-					className="projectLink"
-					href={projects[index].repository}
-					target="_blank"
-				>
-					Code
-				</a>
-				{projects[index].liveSite ? (
-					<a
-						className="projectLink"
-						href={projects[index].liveSite}
-						target="_blank"
+				<div className="cardFooter">
+					<div
+						className="btnProjects "
+						onClick={(e) => {
+							e.preventDefault();
+							subtractFromIndex();
+							flipLeft();
+						}}
 					>
-						Application
-					</a>
-				) : (
-					<></>
-				)}
-			</div>
-			<div
-				className="btnProjects "
-				onClick={(e) => {
-					e.preventDefault();
-					subtractFromIndex();
-					flipLeft();
-				}}
-			>
-				Prev
-			</div>
-			<div
-				className="btnProjects"
-				onClick={(e) => {
-					e.preventDefault();
-					addToIndex();
-					flipRight();
-				}}
-			>
-				Next
+						Prev
+					</div>
+					<div className="linkBox">
+						<a
+							className="projectLink"
+							href={projects[index].repository}
+							target="_blank"
+						>
+							Code
+						</a>
+						{projects[index].liveSite ? (
+							<a
+								className="projectLink"
+								href={projects[index].liveSite}
+								target="_blank"
+							>
+								Application
+							</a>
+						) : (
+							<></>
+						)}
+					</div>
+					<div
+						className="btnProjects"
+						onClick={(e) => {
+							e.preventDefault();
+							addToIndex();
+							flipRight();
+						}}
+					>
+						Next
+					</div>
+				</div>
 			</div>
 		</div>
 	);

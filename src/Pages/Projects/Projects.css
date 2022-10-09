@@ -16,6 +16,12 @@
     width: 90%;
 }
 
+.cardFooter {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+}
+
 .btnProjects {
     border-radius: 15%;
     background: darkblue;
@@ -30,8 +36,15 @@
     border: 1px solid #41b141;
 }
 
+.linkBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
 .projectLink {
-    margin-top: 1.5%;
+    margin: 15px;
     color: white;
     text-decoration: underline;
 }
