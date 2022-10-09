@@ -43,9 +43,20 @@ export default function Projects() {
 		}
 	};
 
+	const flipLeft = () => {
+		const card = document.getElementById("cardProject");
+		card.classList.add("flip-2-ver-left-2");
+		card.classList.remove("flip-2-ver-left-2");
+	};
+	const flipRight = () => {
+		const card = document.getElementById("cardProject");
+		card.classList.add("flip-2-ver-right-2");
+		card.classList.remove("flip-2-ver-right-2");
+	};
+
 	return (
 		<div className="projectsContainer">
-			<div className="cardProject">
+			<div id="cardProject" className="cardProject">
 				<h2>{projects[index].name}</h2>
 				<img className="projectImage" src={projects[index].image}></img>
 				<a
@@ -67,10 +78,24 @@ export default function Projects() {
 					<></>
 				)}
 			</div>
-			<div className="btnProjects" onClick={subtractFromIndex}>
+			<div
+				className="btnProjects "
+				onClick={(e) => {
+					e.preventDefault();
+					subtractFromIndex();
+					flipLeft();
+				}}
+			>
 				Prev
 			</div>
-			<div className="btnProjects" onClick={addToIndex}>
+			<div
+				className="btnProjects"
+				onClick={(e) => {
+					e.preventDefault();
+					addToIndex();
+					flipRight();
+				}}
+			>
 				Next
 			</div>
 		</div>
