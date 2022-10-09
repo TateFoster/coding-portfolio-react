@@ -9,6 +9,7 @@ export default function Footer() {
 				href="https://github.com/TateFoster"
 				target="_blank"
 				className="linkFooter"
+				rel="noreferrer"
 			>
 				<AiFillGithub className="iconFooter" />
 			</a>
@@ -16,6 +17,7 @@ export default function Footer() {
 				href="https://www.linkedin.com/in/tate-foster-774620246/"
 				target="_blank"
 				className="linkFooter"
+				rel="noreferrer"
 			>
 				<AiFillLinkedin className="iconFooter" />
 			</a>

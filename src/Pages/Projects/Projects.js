@@ -75,6 +75,7 @@ export default function Projects() {
 							className="projectLink"
 							href={projects[index].repository}
 							target="_blank"
+							rel="noreferrer"
 						>
 							Code
 						</a>
@@ -83,6 +84,7 @@ export default function Projects() {
 								className="projectLink"
 								href={projects[index].liveSite}
 								target="_blank"
+								rel="noreferrer"
 							>
 								Application
 							</a>
