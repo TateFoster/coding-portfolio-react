@@ -10,6 +10,12 @@ import Projects from "./Pages/Projects/Projects";
 function App() {
 	return (
 		<Router>
+			<div class="animation-wrapper">
+				<div class="particle particle-1"></div>
+				<div class="particle particle-2"></div>
+				<div class="particle particle-3"></div>
+				<div class="particle particle-4"></div>
+			</div>
 			<div className="">
 				<NavBar />
 				<Routes>
