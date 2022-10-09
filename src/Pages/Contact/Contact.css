@@ -11,7 +11,39 @@
     width: 75%;
 }
 
+.emailForm{
+    display: flex;
+    flex-direction: column;
+}
+
 .selfInfo {
     align-self: center;
     justify-self: center;
+}
+
+.labelContact {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+
+#messageInput {
+    background: white;
+    margin: 0 20px;
+    height: 100px;
+    overflow: auto;
+    resize: none;
+}
+
+#emailInput {
+    margin: 0 20px;
+}
+#nameInput {
+    margin: 0 20px;
+}
+
+.contactBtn {
+margin: 25px;
+width: 75px;
 }
