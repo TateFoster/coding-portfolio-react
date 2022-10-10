@@ -11,8 +11,14 @@
     height: 50px;
     width: 300px;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 376px) {
+    .downloadBox {
+        font-size: 2rem;
+    }
 }
