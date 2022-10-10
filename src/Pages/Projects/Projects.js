@@ -13,17 +13,23 @@ export default function Projects() {
 			image: pourLoser,
 			liveSite: "https://tatefoster.github.io/pour-loser-game/",
 			repository: "https://github.com/TateFoster/pour-loser-game",
+			altText:
+				"Image of the start of a trivia game board prompting the user to begin",
 		},
 		{
 			name: "Fair Fare",
 			image: fairFare,
 			liveSite: "https://fair-fare-app.herokuapp.com/",
 			repository: "https://github.com/TateFoster/the-foo-d-s",
+			altText:
+				"Home page image of an application showing a menu to select food type with a picture of people enjoying food",
 		},
 		{
 			name: "Employee Tracker",
 			image: employeeTracker,
 			repository: "https://github.com/TateFoster/employee-tracker",
+			altText:
+				"Image showing start of inline program showing prompts in the terminal",
 		},
 	];
 
@@ -58,7 +64,11 @@ export default function Projects() {
 		<div className="projectsContainer">
 			<div id="cardProject" className="cardProject">
 				<h2>{projects[index].name}</h2>
-				<img className="projectImage" src={projects[index].image}></img>
+				<img
+					className="projectImage"
+					src={projects[index].image}
+					alt={projects[index].altText}
+				></img>
 				<div className="cardFooter">
 					<div
 						className="btnProjects "

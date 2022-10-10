@@ -15,9 +15,9 @@ export default function NavBar() {
 	return (
 		<div className="containerNav">
 			<h1>Tate Foster</h1>
-			<a href="" className="iconNav" onClick={showLinks}>
+			<div className="iconNav" onClick={showLinks}>
 				<FaHamburger />
-			</a>
+			</div>
 			<div className="linksNav" id="linksNav">
 				<a className="btnNav" href="/">
 					About Me
