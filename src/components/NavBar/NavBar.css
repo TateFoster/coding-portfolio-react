@@ -47,7 +47,7 @@ h1 {
 
 .linksNav {
 
-    margin: 0 15px;
+    margin: 0 15px 20px;
     width:100%;
     display: none;
     flex-wrap: wrap;
