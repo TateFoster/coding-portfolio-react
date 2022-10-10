@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 import { FaHamburger } from "react-icons/fa";
 
 const showLinks = (e) => {
@@ -19,21 +20,21 @@ export default function NavBar() {
 				<FaHamburger />
 			</div>
 			<div className="linksNav" id="linksNav">
-				<a className="btnNav" href="/">
+				<Link className="btnNav" to={"/"}>
 					About Me
-				</a>
+				</Link>
 
-				<a className="btnNav" href="/projects">
+				<LInk className="btnNav" to={"/projects"}>
 					Projects
-				</a>
+				</LInk>
 
-				<a className="btnNav" href="/contact">
+				<LInk className="btnNav" to={"/contact"}>
 					Contact Me
-				</a>
+				</LInk>
 
-				<a className="btnNav" href="/resume">
+				<Link className="btnNav" to={"/resume"}>
 					Resume
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
