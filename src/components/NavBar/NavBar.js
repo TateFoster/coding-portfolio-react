@@ -24,13 +24,13 @@ export default function NavBar() {
 					About Me
 				</Link>
 
-				<LInk className="btnNav" to={"/projects"}>
+				<Link className="btnNav" to={"/projects"}>
 					Projects
-				</LInk>
+				</Link>
 
-				<LInk className="btnNav" to={"/contact"}>
+				<Link className="btnNav" to={"/contact"}>
 					Contact Me
-				</LInk>
+				</Link>
 
 				<Link className="btnNav" to={"/resume"}>
 					Resume
