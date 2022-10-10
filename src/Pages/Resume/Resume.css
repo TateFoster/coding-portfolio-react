@@ -17,7 +17,7 @@
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 426px) {
     .downloadBox {
         font-size: 2rem;
     }
