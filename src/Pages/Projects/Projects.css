@@ -36,6 +36,13 @@
     align-items: center;
 }
 
+.lrgScreen {
+        display: none;
+}
+.smlScreen{
+        display: block;
+}
+
 .btnProjects:hover {
     color:black;
     background: #1f85a7;
@@ -55,9 +62,27 @@
     text-decoration: underline;
 }
 
+.imageSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
 .flip-2-ver-left-2 {
 	-webkit-animation: flip-2-ver-left-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: flip-2-ver-left-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@media screen and (min-width: 426px) {
+        .smlScreen {
+                display: none;
+        }
+        .lrgScreen {
+                display: inline;
+        }
+        .projectImage {
+                width: 60%
+        }
 }
 
 /* ----------------------------------------------

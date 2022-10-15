@@ -12,11 +12,26 @@ import {
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
 import pig from "./programming-pig.jpg";
 
+const showLinks = (e) => {
+	e.preventDefault();
+	const link = document.getElementById("linksNav");
+	if (link.style.display === "flex") {
+		link.style.display = "none";
+	} else {
+		link.style.display = "flex";
+	}
+};
+
 export default function AboutMe() {
 	return (
 		<div className="containerAbout">
 			<p>Hi there!</p>
-			<img className="profile" src={pig} alt="Guinea Pig at keyboard"></img>
+			<img
+				className="profile"
+				src={pig}
+				alt="Guinea Pig at keyboard"
+				onClick={showLinks}
+			></img>
 			<p>
 				I'm a full stack web developer with a passion for creating fun and easy
 				to use applications!

@@ -64,14 +64,37 @@ export default function Projects() {
 		<div className="projectsContainer">
 			<div id="cardProject" className="cardProject">
 				<h2>{projects[index].name}</h2>
-				<img
-					className="projectImage"
-					src={projects[index].image}
-					alt={projects[index].altText}
-				></img>
+				<div className="imageSection">
+					<div
+						className="btnProjects lrgScreen"
+						onClick={(e) => {
+							e.preventDefault();
+							subtractFromIndex();
+							flipLeft();
+						}}
+					>
+						Prev
+					</div>
+
+					<img
+						className="projectImage"
+						src={projects[index].image}
+						alt={projects[index].altText}
+					></img>
+					<div
+						className="btnProjects lrgScreen"
+						onClick={(e) => {
+							e.preventDefault();
+							addToIndex();
+							flipRight();
+						}}
+					>
+						Next
+					</div>
+				</div>
 				<div className="cardFooter">
 					<div
-						className="btnProjects "
+						className="btnProjects smlScreen"
 						onClick={(e) => {
 							e.preventDefault();
 							subtractFromIndex();
@@ -103,7 +126,7 @@ export default function Projects() {
 						)}
 					</div>
 					<div
-						className="btnProjects"
+						className="btnProjects smlScreen"
 						onClick={(e) => {
 							e.preventDefault();
 							addToIndex();
