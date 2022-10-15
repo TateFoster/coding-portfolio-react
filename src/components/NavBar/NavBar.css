@@ -3,7 +3,7 @@ h1 {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: darkgreen;
+    color: #50C878;
 }
 
 .btnNav{
@@ -18,7 +18,7 @@ h1 {
     margin: 10px 0px;
     padding: 15px;
     text-align: center;
-    color: darkgreen;
+    color: #50C878;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -34,7 +34,7 @@ h1 {
 .iconNav {
     align-self: center;
     text-decoration: none;
-    color: blue
+    color: #3483df
 }
 
 .containerNav {

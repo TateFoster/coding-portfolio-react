@@ -1,7 +1,7 @@
 .projectsContainer {
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color: #FFE5B4;
     justify-content: space-evenly;
 }
 
