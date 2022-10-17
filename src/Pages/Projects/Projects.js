@@ -3,6 +3,7 @@ import "./Projects.css";
 import fairFare from "./fair-fare.png";
 import pourLoser from "./pour-loser.png";
 import employeeTracker from "./employee-tracker.PNG";
+import bubbleDungeonZ from "./bubble-dungeonZ.png";
 
 export default function Projects() {
 	let [index, setIndex] = useState(0);
@@ -30,6 +31,14 @@ export default function Projects() {
 			repository: "https://github.com/TateFoster/employee-tracker",
 			altText:
 				"Image showing start of inline program showing prompts in the terminal",
+		},
+		{
+			name: "Bubble DungeonZ",
+			image: bubbleDungeonZ,
+			liveSite: "https://sleepy-mountain-95539.herokuapp.com/",
+			repository: "https://github.com/l1keafox/bubbleDungeonz",
+			altText:
+				"Front page of the website showing a featured game as well as high scores from the game",
 		},
 	];
 
