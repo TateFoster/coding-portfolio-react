@@ -1,7 +1,14 @@
 .containerResume {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
+}
+
+.resumeImg {
+    margin: 20px;
+    padding: 15px;
+    width: 75%;
 }
 
 .downloadBox {
