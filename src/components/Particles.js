@@ -21,23 +21,16 @@ export default function ParticleEffects() {
 			init={particlesInit}
 			loaded={particlesLoaded}
 			options={{
-				preset: "stars",
-				background: {
-					color: {
-						value: "#000000",
-					},
-				},
+				backgroundMode: true,
 				fpsLimit: 120,
 				particles: {
 					color: {
-						value: "#ffffff",
-					},
-					links: {
-						color: "#ffffff",
-						distance: 150,
-						enable: false,
-						opacity: 0.5,
-						width: 1,
+						value: "#ff0000",
+						animation: {
+							enable: true,
+							speed: 50,
+							sync: false,
+						},
 					},
 					collisions: {
 						enable: false,
@@ -49,7 +42,7 @@ export default function ParticleEffects() {
 							default: "out",
 						},
 						random: true,
-						speed: 1,
+						speed: 0.25,
 						straight: false,
 					},
 					number: {
@@ -62,13 +55,28 @@ export default function ParticleEffects() {
 					opacity: {
 						value: 0.5,
 					},
+					life: {
+						duration: {
+							sync: false,
+							value: 200,
+						},
+						count: 0,
+						delay: {
+							random: {
+								enable: true,
+								minimumValue: 0.5,
+							},
+							value: 1,
+						},
+					},
 					shape: {
 						type: "circle",
 					},
 					size: {
-						value: { min: 1, max: 5 },
+						value: { min: 0.5, max: 2 },
 					},
 				},
+				detectRetina: true,
 			}}
 		/>
 	);
