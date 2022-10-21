@@ -26,7 +26,7 @@ export default function ParticleEffects() {
 				fpsLimit: 120,
 				particles: {
 					color: {
-						value: "#ff0000",
+						value: "#008080",
 						animation: {
 							enable: true,
 							speed: 50,
