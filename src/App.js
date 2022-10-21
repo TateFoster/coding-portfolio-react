@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./Pages/Contact/Contact";
 import Projects from "./Pages/Projects/Projects";
 import Resume from "./Pages/Resume/Resume";
-import ParticleEffects from "./components/Particles";
+import ParticleEffects from "./components/Particles/Particles";
 
 function App() {
 	return (
@@ -22,7 +22,7 @@ function App() {
 				</Routes>
 				<Footer />
 			</div>
-			<ParticleEffects />
+			<ParticleEffects className="particles" />
 		</Router>
 	);
 }

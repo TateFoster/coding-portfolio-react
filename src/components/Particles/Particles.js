@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "./Particles.css";
 
 export default function ParticleEffects() {
 	const particlesInit = useCallback(async (engine) => {

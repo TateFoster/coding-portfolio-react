@@ -1,8 +1,12 @@
 /* CSS for particle effects Created by Alexi Taylor */
 
 body {
-  background: rgb(26, 25, 25);
+  background: #1a1919;
   /* Config */
   /* mixins */
   /* Styles */
+}
+
+.particles {
+  z-index: -1;
 }
