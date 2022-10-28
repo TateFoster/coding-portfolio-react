@@ -25,17 +25,28 @@ const showLinks = (e) => {
 export default function AboutMe() {
 	return (
 		<div className="containerAbout">
-			<p>Hi there!</p>
-			<img
-				className="profile"
-				src={pig}
-				alt="Guinea Pig at keyboard"
-				onClick={showLinks}
-			></img>
-			<p>
-				I'm a full stack web developer with a passion for creating fun and easy
-				to use applications!
-			</p>
+			<div className="profile">
+				<h2>Hi there!</h2>
+				<img
+					className="profileImg"
+					src={pig}
+					alt="Guinea Pig at keyboard"
+					onClick={showLinks}
+				></img>
+				<p>
+					I'm a single dad now pursuing my dreams of being a full stack web
+					developer with a passion for creating fun and easy to use
+					applications! I have long had an interest in computers, first mostly
+					as just an avid consumer of games and seeing the amazing advances in
+					our lifetimes of AI learning.
+				</p>
+				<p>
+					I finally allowed myself the opportunity to learn coding in a formal
+					environment and found that I absolutely adored coding in all it's
+					forms. I now seek to keep learning and improving my coding skills so
+					that I can be the best computer wizard possible.
+				</p>
+			</div>
 			<h3>Technologies:</h3>
 			<div className="allIcons">
 				<div className="iconBox">
