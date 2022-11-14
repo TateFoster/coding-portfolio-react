@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import { useEffect } from "react";
+import { useState } from "react";
 import {
 	DiNodejsSmall,
 	DiJavascript1,
@@ -26,11 +26,11 @@ const showLinks = (e) => {
 };
 
 export default function AboutMe() {
-	let profileImageValue = false;
+	let [profileImageValue, setProfileImageValue] = useState(false);
 
 	const profileImageChange = () => {
 		console.log(profileImageValue);
-		return (profileImageValue = !profileImageValue);
+		return setProfileImageValue((profileImageValue = !profileImageValue));
 	};
 
 	return (
