@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import { useEffect } from "react";
 import {
 	DiNodejsSmall,
 	DiJavascript1,
@@ -10,7 +11,9 @@ import {
 	DiHtml5,
 } from "react-icons/di";
 import { SiHandlebarsdotjs, SiExpress } from "react-icons/si";
-import pig from "./programming-pig.jpg";
+
+import WithHat from "./ProfilePhotos/WithHat/WithHat";
+import NoHat from "./ProfilePhotos/NoHat/NoHat";
 
 const showLinks = (e) => {
 	e.preventDefault();
@@ -23,16 +26,28 @@ const showLinks = (e) => {
 };
 
 export default function AboutMe() {
+	let profileImageValue = false;
+
+	const profileImageChange = () => {
+		console.log(profileImageValue);
+		return (profileImageValue = !profileImageValue);
+	};
+
 	return (
 		<div className="containerAbout">
 			<div className="profile">
 				<h2>Hi there!</h2>
-				<img
-					className="profileImg"
-					src={pig}
-					alt="Guinea Pig at keyboard"
-					onClick={showLinks}
-				></img>
+				{profileImageValue ? (
+					<NoHat
+						profileImageChange={profileImageChange}
+						showLinks={showLinks}
+					/>
+				) : (
+					<WithHat
+						profileImageChange={profileImageChange}
+						showLinks={showLinks}
+					/>
+				)}
 				<p>
 					I'm a single dad now pursuing my dreams of being a full stack web
 					developer with a passion for creating fun and easy to use
